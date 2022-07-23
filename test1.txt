@@ -1,0 +1,220 @@
+E:\test\learngit>git init
+Initialized empty Git repository in E:/test/learngit/.git/
+
+E:\test\learngit>dir
+ Volume in drive E is New Volume
+ Volume Serial Number is 866D-71F4
+
+ Directory of E:\test\learngit
+
+07/23/2022  07:46 PM    <DIR>          .
+07/23/2022  07:46 PM    <DIR>          ..
+07/23/2022  07:43 PM                 0 README.md
+               1 File(s)              0 bytes
+               2 Dir(s)  294,652,379,136 bytes free
+
+E:\test\learngit>git config --global user.name
+medashabari
+
+E:\test\learngit>git config --global user.email "medashabari@gmail.com"
+
+E:\test\learngit>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\test\learngit>git add README.md
+
+E:\test\learngit>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+
+E:\test\learngit>git commint -m "This is the first commit"
+git: 'commint' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+E:\test\learngit>git commit -m "This is the first commit"
+[master (root-commit) c735ac7] This is the first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+
+E:\test\learngit>git status
+On branch master
+nothing to commit, working tree clean
+
+E:\test\learngit>git branch
+* master
+
+E:\test\learngit>git branch -M main
+
+E:\test\learngit>git branch
+* main
+
+E:\test\learngit>git remote add origin https://github.com/medashabari/Learn_Git.git
+
+E:\test\learngit>git status
+On branch main
+nothing to commit, working tree clean
+
+E:\test\learngit>git remote -v
+origin  https://github.com/medashabari/Learn_Git.git (fetch)
+origin  https://github.com/medashabari/Learn_Git.git (push)
+
+E:\test\learngit>git push origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 218 bytes | 109.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/medashabari/Learn_Git.git
+ * [new branch]      main -> main
+
+E:\test\learngit>git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\test\learngit>git restore README.md
+
+E:\test\learngit>git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\test\learngit>git add .
+
+E:\test\learngit>git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        new file:   test1.txt
+
+
+E:\test\learngit>git commit -m "This is my second commit"
+[main ea61e18] This is my second commit
+ 2 files changed, 1 insertion(+)
+ create mode 100644 test1.txt
+
+E:\test\learngit>git remote -v
+origin  https://github.com/medashabari/Learn_Git.git (fetch)
+origin  https://github.com/medashabari/Learn_Git.git (push)
+
+E:\test\learngit>git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 333 bytes | 111.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/medashabari/Learn_Git.git
+   c735ac7..ea61e18  main -> main
+
+E:\test\learngit>E:\test\learngitclone
+'E:\test\learngitclone' is not recognized as an internal or external command,
+operable program or batch file.
+
+E:\test\learngit>E:
+
+E:\test\learngit>cd..
+
+E:\test>cd learngitclone
+
+E:\test\learngitclone>git clone https://github.com/medashabari/Learn_Git.git
+Cloning into 'Learn_Git'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+E:\test\learngitclone>cd..
+
+E:\test>cd learngit
+
+E:\test\learngit>git status
+On branch main
+nothing to commit, working tree clean
+
+E:\test\learngit>cd..
+
+E:\test>cd learngitclone
+
+E:\test\learngitclone>cd Learn_Git
+
+E:\test\learngitclone\Learn_Git>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+E:\test\learngitclone\Learn_Git>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\test\learngitclone\Learn_Git>git add .
+
+E:\test\learngitclone\Learn_Git>git commint -m "This is my third commit"
+git: 'commint' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+E:\test\learngitclone\Learn_Git>git commit -m "This is my third commit"
+[main f78dfb8] This is my third commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test2.txt
+
+E:\test\learngitclone\Learn_Git>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\test\learngitclone\Learn_Git>git branch
+* main
+
+E:\test\learngitclone\Learn_Git>git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 276 bytes | 92.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/medashabari/Learn_Git.git
+   ea61e18..f78dfb8  main -> main
+
+E:\test\learngitclone\Learn_Git>
